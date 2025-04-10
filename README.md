@@ -46,3 +46,9 @@ Visualization Node:
 ```bash
 /SBAMP/src/sbamp/scripts$ chmod +x visualization_node.py 
 ```
+
+To pull with submodule changes:
+
+```bash
+git pull --recurse-submodules
+```
