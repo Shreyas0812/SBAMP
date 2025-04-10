@@ -86,7 +86,7 @@ class RRT(Node):
 
         self.L = 1.3
         self.P = 0.5
-        csv_data = np.genfromtxt("/home/kabir/F1_labs/src/sampling-based-motion-planning-team10/lab7_pkg/scripts/levine1.csv", delimiter=",", skip_header=1, dtype=None, encoding='UTF-8')
+        csv_data = np.genfromtxt("./levine1.csv", delimiter=",", skip_header=1, dtype=None, encoding='UTF-8')
         self.waypoints = csv_data[:, 0:2]
         self.kd_tree = KDTree(self.waypoints)
         self.path = []
