@@ -1,3 +1,6 @@
 [submodule "src/f1tenth_gym_ros"]
 	path = src/f1tenth_gym_ros
 	url = https://github.com/Shreyas0812/f1tenth_gym_ros.git
+[submodule "src/sbamp/sbamp/phys_gmm_python"]
+	path = src/sbamp/sbamp/phys_gmm_python
+	url = https://github.com/penn-figueroa-lab/phys_gmm_python.git
