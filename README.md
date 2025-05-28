@@ -1,5 +1,7 @@
-# SBAMP
-Sampling Based Adaptive Motion Planning
+### NOTE: UDNER DEVELOPMENT
+
+# SBAMP 
+Sampling Based Adaptive Motion Planning -- MPC + SEDS
 
 ### Steps to run:
 
@@ -70,16 +72,5 @@ To run only rrt:
 ```bash
 /SBAMP$ ros2 launch sbamp only_rrt.launch.py 
 ```
-
-### Video - Simulation:
-
-https://github.com/user-attachments/assets/24c63235-09f2-482f-8d48-276d0a401b4b
-
-
-### Poster:
-
-<img src="SBAMP-Official.png" alt="SBAMP Poster" width="800"/>
-
-
 
 
