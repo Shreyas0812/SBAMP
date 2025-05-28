@@ -71,9 +71,15 @@ To run only rrt:
 /SBAMP$ ros2 launch sbamp only_rrt.launch.py 
 ```
 
-### Video 
+### Video - Simulation:
 
 https://github.com/user-attachments/assets/24c63235-09f2-482f-8d48-276d0a401b4b
+
+
+### Poster:
+
+<img src="SBAMP-Official.png" alt="SBAMP Poster" width="800"/>
+
 
 
 
