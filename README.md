@@ -67,10 +67,4 @@ To run without visualization:
 /SBAMP$ ros2 launch sbamp sbamp.launch.py 
 ```
 
-To run on car:
-
-```bash
-/SBAMP$ ros2 launch sbamp only_rrt.launch.py 
-```
-
 
