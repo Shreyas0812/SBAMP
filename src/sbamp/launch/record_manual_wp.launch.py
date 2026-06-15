@@ -11,7 +11,7 @@ def generate_launch_description():
             parameters=[{
                 'goal_pose_topic': '/goal_pose',
                 'visualize_wp_topic': '/visualization/manual_waypoints',
-                'waypoint_file_path': '/home/shreyas/Documents/MEAM6230_LCARR/SBAMP/src/sbamp/config/waypoints_manual.csv'
+                'waypoint_file_name': 'waypoints_manual.csv'
             }]
         )
     ])

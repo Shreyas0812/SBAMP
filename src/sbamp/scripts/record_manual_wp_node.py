@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
+import os
+
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
+from ament_index_python.packages import get_package_share_directory
 
 from geometry_msgs.msg import PoseStamped, Pose, Quaternion, Vector3, Point
 from visualization_msgs.msg import Marker, MarkerArray
@@ -19,13 +22,15 @@ class RecodManualWPNode(Node):
 
         self.declare_parameter('goal_pose_topic', '/goal_pose')
         self.declare_parameter('visualize_wp_topic', '/visualization/manual_waypoints')
-        self.declare_parameter('waypoint_file_path', '/home/shreyas/Documents/MEAM6230_LCARR/SBAMP/src/sbamp/config/waypoints_manual.csv')
+        self.declare_parameter('waypoint_file_name', 'waypoints_manual.csv')
         self.declare_parameter('spline_waypoints', True)
         self.declare_parameter('spline_num', 50)
 
         goal_pose_topic = self.get_parameter('goal_pose_topic').get_parameter_value().string_value
         visualize_wp_topic = self.get_parameter('visualize_wp_topic').get_parameter_value().string_value
-        self.waypoint_file_path = self.get_parameter('waypoint_file_path').get_parameter_value().string_value
+        waypoint_file_name = self.get_parameter('waypoint_file_name').get_parameter_value().string_value
+        package_share_dir = get_package_share_directory("sbamp")
+        self.waypoint_file_path = os.path.join(package_share_dir, 'config', waypoint_file_name)
 
         self.spline_waypoints = self.get_parameter('spline_waypoints').get_parameter_value().bool_value
         self.spline_num = self.get_parameter('spline_num').get_parameter_value().integer_value

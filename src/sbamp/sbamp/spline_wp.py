@@ -1,3 +1,4 @@
+import os
 import csv
 import numpy as np
 from scipy.interpolate import CubicSpline
@@ -63,8 +64,9 @@ def spline_interpolate(waypoints, spline_num):
 
 
 if __name__ == "__main__":
-    input_file = "/home/shreyas/Documents/MEAM6230_LCARR/SBAMP/src/sbamp/config/waypoints_manual.csv"
-    output_file = "/home/shreyas/Documents/MEAM6230_LCARR/SBAMP/src/sbamp/config/waypoints_manual_spline.csv"
+    config_dir = os.path.join(os.path.dirname(__file__), "..", "config")
+    input_file = os.path.join(config_dir, "waypoints_manual.csv")
+    output_file = os.path.join(config_dir, "waypoints_manual_spline.csv")
 
     waypoints = load_waypoints(input_file)
 
