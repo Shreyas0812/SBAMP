@@ -78,7 +78,7 @@ https://github.com/user-attachments/assets/24c63235-09f2-482f-8d48-276d0a401b4b
 
 ### Poster:
 
-<img src="SBAMP-Official.png" alt="SBAMP Poster" width="800"/>
+<img src="assets/SBAMP-Official.png" alt="SBAMP Poster" width="800"/>
 
 
 
