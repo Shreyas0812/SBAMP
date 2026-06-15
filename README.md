@@ -48,7 +48,7 @@ If there is an error running any of the above commands, run this and try again:
 Visualization Node:
 
 ```bash
-/SBAMP/src/sbamp/scripts$ chmod +x visualization_node.py 
+/SBAMP/src/sbamp/scripts$ chmod +x visualize_node.py 
 ```
 
 #### Other Launch Options:
@@ -56,7 +56,7 @@ Visualization Node:
 To run with visualization:
 
 ```bash
-/SBAMP$ ros2 launch sbamp sbamp_visualization.launch.py 
+/SBAMP$ ros2 launch sbamp sbamp_visualize.launch.py 
 ```
 
 To run without visualization:
